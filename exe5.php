@@ -5,5 +5,7 @@ Attention, la valeur générée devra être arrondie à 2 décimales.
 
 <?php
 $montantenfranc = 100;
-echo mony_format "$flottant";
-echo "le montant contient $flottant";
+$montanteneuro= round($montantenfranc*0.1524, 2);
+
+echo "$montantenfranc francs = $montanteneuro euro";
+
